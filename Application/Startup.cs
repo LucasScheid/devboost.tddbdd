@@ -133,9 +133,8 @@ namespace devboost.dronedelivery.felipe
             // Criação de estruturas, usuários e permissões
             // na base do ASP.NET Identity Core (caso ainda não
             // existam)
-            var droneRoleValidator = app.ApplicationServices.GetService<IDroneRoleValidator>();
-            var validateDatabase = app.ApplicationServices.GetService<IValidateDatabase>();
-
+            var validateDatabase = new ValidateDatabse();
+            var droneRoleValidator = new DroneRoleValidator(roleManager);
             new IdentityInitializer(validateDatabase, userManager, droneRoleValidator).Initialize();
 
             // Swagger

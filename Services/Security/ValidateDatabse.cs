@@ -7,14 +7,12 @@ namespace devboost.dronedelivery.felipe.Security
     [ExcludeFromCodeCoverage]
     public class ValidateDatabse : IValidateDatabase
     {
-        private readonly ApplicationDbContext _applicationDbContext;
-        public ValidateDatabse(ApplicationDbContext applicationDbContext)
+        public ValidateDatabse()
         {
-            _applicationDbContext = applicationDbContext;
         }
         public bool EnsureCreated()
         {
-            return _applicationDbContext.Database.EnsureCreated();
+            return true;
         }
     }
 }
