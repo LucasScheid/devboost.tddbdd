@@ -21,7 +21,9 @@ Grupo 4 - Projeto Itaú (TDD e BDD)
 - Marcos Alves 
 - Italo
 
-### User autenticação identity (em memória)
+## User autenticação identity (em memória)
+
+Utilize o usuário abaixo para conexão.
 
 {
   "id": 0,
@@ -30,5 +32,6 @@ Grupo 4 - Projeto Itaú (TDD e BDD)
   "longitude": -46.6718338,
   "userId": "admin_drone",
   "password": "AdminAPIDrone01!"
-  
 }
+
+
